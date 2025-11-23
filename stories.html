@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read powerful stories of impact from the LGBTIQ community in East Africa.">
+    <title>Stories & Impact - Queers in East Africa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-blue-900 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold">queers_in_east_africa</a>
+                <div class="hidden md:flex space-x-6 items-center">
+                    <a href="index.html" class="hover:text-blue-200 transition">Home</a>
+                    <a href="about.html" class="hover:text-blue-200 transition">About Us</a>
+                    <a href="programs.html" class="hover:text-blue-200 transition">Programs & Services</a>
+                    <a href="stories.html" class="hover:text-blue-200 transition">Stories</a>
+                    <a href="contact.html" class="hover:text-blue-200 transition">Contact</a>
+                    <a href="donate.html" class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-lg transition">Donate</a>
+                </div>
+                <button class="md:hidden" id="mobile-menu-btn">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="hidden md:hidden mt-4" id="mobile-menu">
+                <a href="index.html" class="block py-2 hover:text-blue-200">Home</a>
+                <a href="about.html" class="block py-2 hover:text-blue-200">About Us</a>
+                <a href="programs.html" class="block py-2 hover:text-blue-200">Programs & Services</a>
+                <a href="stories.html" class="block py-2 hover:text-blue-200">Stories</a>
+                <a href="contact.html" class="block py-2 hover:text-blue-200">Contact</a>
+                <a href="donate.html" class="block py-2 bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-lg mt-2 text-center">Donate</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Stories Header -->
+    <section class="bg-gradient-to-br from-blue-900 via-blue-800 to-purple-900 text-white py-16 px-4">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6">Stories of Impact</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto">
+                Real stories from our community showing the power of support, compassion, and solidarity
+            </p>
+        </div>
+    </section>
+
+    <!-- Stories Grid -->
+    <section class="py-16 px-4">
+        <div class="container mx-auto max-w-6xl">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Story 1 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🏠</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">A Safe Place to Call Home</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "After being disowned by my family, I had nowhere to go. The emergency shelter program didn't just give me a roof over my head—they gave me hope. The support I received helped me find my footing again and connect with a community that truly understood me."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Alex, 24, Kenya</p>
+                </div>
+
+                <!-- Story 2 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">💚</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Healing Through Support</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "The mental health counseling I received changed my life. I had been carrying trauma for years, and having a safe space to process it with someone who understood the unique challenges I faced was transformative. I'm now in a much better place."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Sam, 28, Uganda</p>
+                </div>
+
+                <!-- Story 3 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🍽️</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Food Security, Peace of Mind</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "When I lost my job due to discrimination, I didn't know how I would eat. The food assistance program was there for me during my darkest moments. It allowed me to focus on finding new employment instead of worrying about my next meal."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Jordan, 31, Tanzania</p>
+                </div>
+
+                <!-- Story 4 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Protection When It Mattered Most</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "I was in immediate danger, and the safety and protection team responded within hours. They helped me get to safety, provided legal support, and ensured I was protected. I don't know what would have happened without them."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Taylor, 26, Rwanda</p>
+                </div>
+
+                <!-- Story 5 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">🤝</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Rebuilding Family Bonds</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "The mediation program helped my family understand me better. Through facilitated conversations, we were able to rebuild our relationship. It wasn't easy, but having support made all the difference."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Morgan, 22, Kenya</p>
+                </div>
+
+                <!-- Story 6 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+                    <div class="text-4xl mb-4">👕</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Dignity Through Clothing</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "After fleeing my home with nothing, the clothing support program gave me more than clothes—they gave me dignity. Having appropriate clothing helped me feel human again and gave me confidence to start rebuilding my life."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Casey, 29, Uganda</p>
+                </div>
+
+                <!-- Story 7 -->
+                <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition md:col-span-2 lg:col-span-3">
+                    <div class="text-4xl mb-4">🚨</div>
+                    <h3 class="text-xl font-bold mb-3 text-blue-900">Crisis Response Saved My Life</h3>
+                    <p class="text-gray-700 italic mb-4 leading-relaxed">
+                        "I was in a crisis situation, and the rapid response team was there immediately. They coordinated everything—safety, shelter, legal support, and ongoing care. The comprehensive support I received during my most vulnerable moment was life-saving. Today, I'm safe, stable, and giving back to the community that saved me."
+                    </p>
+                    <p class="text-sm text-gray-600 font-semibold">— Riley, 27, Tanzania</p>
+                </div>
+            </div>
+
+            <!-- Impact Statistics -->
+            <div class="mt-16 bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-8">
+                <h2 class="text-3xl font-bold text-center mb-8 text-blue-900">Our Impact</h2>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <div>
+                        <div class="text-4xl font-bold text-blue-900 mb-2">500+</div>
+                        <p class="text-gray-700">Lives Supported</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-900 mb-2">200+</div>
+                        <p class="text-gray-700">Emergency Responses</p>
+                    </div>
+                    <div>
+                        <div class="text-4xl font-bold text-blue-900 mb-2">100+</div>
+                        <p class="text-gray-700">Shelter Placements</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Call to Action -->
+            <div class="mt-12 text-center">
+                <h2 class="text-2xl md:text-3xl font-bold mb-4 text-blue-900">Help Us Create More Stories of Hope</h2>
+                <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+                    Your support enables us to continue providing life-saving services and creating positive change in the lives of LGBTIQ individuals across East Africa.
+                </p>
+                <a href="donate.html" class="inline-block bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-lg text-lg transition transform hover:scale-105 shadow-lg">
+                    Support Our Work
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">queers_in_east_africa</h3>
+                    <p class="text-gray-400">Supporting and protecting LGBTIQ individuals across East Africa.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition">About Us</a></li>
+                        <li><a href="programs.html" class="text-gray-400 hover:text-white transition">Programs & Services</a></li>
+                        <li><a href="stories.html" class="text-gray-400 hover:text-white transition">Stories</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <!-- TODO: Replace Instagram handle and link below -->
+                        <a href="https://instagram.com/queers_in_east_africa" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-pink-500 transition">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 mt-4">@queers_in_east_africa</p>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 queers_in_east_africa. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
